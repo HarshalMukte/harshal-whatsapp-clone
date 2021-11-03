@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Whatsapp clone</title>
+    <!-- external css -->
+    <link rel="stylesheet" href="style/style.css" />
+    <!-- fontAwesome cdn -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+      integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- for favicon -->
+    <link rel="shortcut icon" href="https://img.icons8.com/color/2x/whatsapp.png" type="image/x-icon">
+  </head>
+  <body>
+
+    <!-- theme toggle switch -->
+    <div class="theme">
+      <input type="checkbox" class="checkbox" id="checkbox">
+      <label for="checkbox" class="theme_label">
+        <i class="fas fa-moon"></i>
+        <i class="fas fa-sun"></i>
+        <div class="ball"></div>
+      </label>
+    </div>
+
+    <div id="sender">
+      <div class="data">
+        <div class="down_arrow"><i class="fas fa-angle-double-down"></i></div>
+          <!-- header section -->
+        <div class="header">
+          <div class="image"></div>
+          <div class="name">Anil<span id="status">online</span></div>
+          <div class="icons">
+            <i class="fas fa-video"></i>
+            <i class="fas fa-phone-alt"></i>
+            <i class="fas fa-ellipsis-v"></i>
+          </div>
+        </div>
+        <div class="chat_section" id="chats">
+            <div class="fix"></div>
+
+             <!-- <div class="recieved_message">
+                <p>Received message</p>
+                <div class="time">10:52 AM</div>
+            </div> -->
+             
+            <!--<div class="send_message">
+                <p>send message</p>
+               <div class="details">
+                <div class="time">10:52 AM</div>
+                <i class="fas fa-check-double"></i>
+               </div>
+            </div> -->
+
+        </div>
+        <!-- footer section -->
+        <div class="footer">
+            <div class="input_section">
+                <i class="far fa-smile"></i>
+                <input type="text" id="text" placeholder="Type a message">
+                <!-- <i class="fas fa-paperclip"></i> -->
+                <input type="file" class="fas fa-paperclip sender-choose-file" accept="image/png, image/jpeg" placeholder="">
+                <i class="fas fa-camera"></i>
+                
+            </div>
+            <div class="send_logo">
+                <img src="images/microphone.png">
+            </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="receiver">
+        <div class="data">
+          <div class="down_arrow"><i class="fas fa-angle-double-down"></i></div>
+            <!-- header section -->
+          <div class="header">
+            <div class="image"></div>
+            <div class="name">Harshal<span id="status">online</span></div>
+            <div class="icons">
+              <i class="fas fa-video"></i>
+              <i class="fas fa-phone-alt"></i>
+              <i class="fas fa-ellipsis-v"></i>
+            </div>
+          </div>
+          <!-- chat section -->
+          <div class="chat_section" id="chats">
+              <div class="fix"></div>
+
+              <!-- <div class="recieved_message">
+                  <p>recieved message</p>
+                  <div class="time">10:52 AM</div>
+              </div>
+              <div class="send_message">
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est odio molestias dolorem, qui modi recusandae velit! In quos quod iste.</p>
+                 <div class="details">
+                  <div class="time">10:52 AM</div>
+                  <i class="fas fa-check-double"></i>
+                 </div>
+              </div> -->
+
+          </div>
+          <!-- footer section -->
+          <div class="footer">
+              <div class="input_section">
+                  <i class="far fa-smile"></i>
+                  <input type="text" id="text" placeholder="Type a message">
+                  <!-- <i class="fas fa-paperclip"></i> -->
+                  <input type="file" class="fas fa-paperclip receiver-choose-file"  accept="image/png, image/jpeg" placeholder="">
+                  <i class="fas fa-camera"></i>
+              </div>
+              <div class="send_logo">
+                  <img src="images/microphone.png">
+              </div>
+          </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
